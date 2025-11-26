@@ -1,7 +1,17 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0px;
+    background-color: rgb(236, 236, 198);
+}
+
+main {
+    background-color: rgb(0, 51, 255);
+}
 .article_grid {
-    background-color: aqua;
+    background-color: rgb(49, 62, 118);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(max-width, 1fr));
     row-gap: 10px;
     column-gap: 100px;
     padding: 20px;
@@ -10,6 +20,12 @@
     margin-bottom: 10px;
     margin-left: 50px;
     margin-right: 50px;
+    
+}
+
+.article_grid img {
+    max-width: 400px;
+    max-height: 400px;
 }
 
 /*  */
@@ -22,18 +38,17 @@
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     scale: 1;
-    transition: all 0.6s ease;
-}
 
+    transition: all 0.3s ease;
+}
 
 .article_piece:hover {
   display: block;
   background-color: rgb(255, 0, 187);
-  scale: 1.1;
+  scale: 1.01;
   box-shadow: 0 4px 15px rgba(0,0,0,1);
   
 }
-
 
 .article_piece p {
     text-align: center;
@@ -43,4 +58,23 @@
 .article_piece h2 {
     text-align: center;
     background-color: rgb(246, 255, 0);
+}
+
+header {
+    background-color: rgb(40, 40, 40);
+
+}
+
+header h1 {
+    color:beige;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.article_piece_side {
+    background-color:beige;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
 }
