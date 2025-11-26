@@ -17,11 +17,13 @@ a {
 }
 
 .nav {
-
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff7d1; /* soft gold pastel */
+  border-bottom: 1px solid #e0c878;
+
 }
 
 .hero {
@@ -122,5 +124,17 @@ header h1 {
     text-align: center;
     font-size: 32px;
     font-family: var(--heading-font);
+}
+
+/* ----- Colour Theme ----- */
+:root {
+  --bg: #fafafa;
+  --accent: #c49b00;
+  --dark: #333;
+  --light: #fff;
+  --muted: #666;
+
+  --heading-font: "Georgia", serif;
+  --body-font: "Helvetica Neue", Arial, sans-serif;
 }
 
