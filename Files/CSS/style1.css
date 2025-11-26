@@ -31,6 +31,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff7d1; /* soft gold pastel */
+  border-bottom: 1px solid #e0c878;
+
 }
 
 .logo {
@@ -133,6 +136,8 @@ a {
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   transition: 0.2s ease;
+  border-left: 4px solid var(--accent);
+
 }
 
 .card:hover {
@@ -142,7 +147,7 @@ a {
 
 .card:hover {
   border-color: var(--accent);
-  background: #fffdf3; /* a very soft warm tint */
+  background: #fffdf3;
 }
 
 
@@ -190,4 +195,17 @@ footer {
   .hero-content h1 {
     font-size: 1.8rem;
   }
+}
+
+/* ----- Headings ----- */
+h2 {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+
+/* ----- Scrollbar ----- */
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
 }
