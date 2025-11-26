@@ -1,13 +1,66 @@
+:root {
+  --bg: #fafafa;
+  --accent: #c49b00;
+  --dark: #333;
+  --light: #fff;
+  --muted: #666;
+
+  --heading-font: "Georgia", serif;
+  --body-font: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ------------------------------------------------------------------------- */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  background: url("../Images/hero-museum.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+  color: var(--dark);
+}
+
+.logo {
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 18px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* ------------------------------------------------------------------------- */
+
 body {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 0px;
-    background-color: rgb(236, 236, 198);
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    font-family: var(--body-font);
+    color: var(--dark);
+    line-height: 1.6;
 }
 
 main {
     background-color: rgb(185, 185, 155);
 }
+
 .article_grid {
     background-color:rgb(236, 236, 198);
     display: grid;
@@ -68,5 +121,6 @@ header h1 {
     color:rgb(0, 0, 0);
     text-align: center;
     font-size: 32px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--heading-font);
 }
+
