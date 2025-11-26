@@ -6,10 +6,10 @@ body {
 }
 
 main {
-    background-color: rgb(0, 51, 255);
+    background-color: rgb(185, 185, 155);
 }
 .article_grid {
-    background-color: rgb(49, 62, 118);
+    background-color:rgb(236, 236, 198);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(max-width, 1fr));
     row-gap: 10px;
@@ -33,47 +33,39 @@ main {
 /* https://www.w3schools.com/html/html_examples.asp */
 
 .article_piece {
-    background: #ffffffb4;
+    background: rgb(153, 153, 128);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     scale: 1;
-
     transition: all 0.3s ease;
 }
 
 .article_piece:hover {
   display: block;
-  background-color: rgb(255, 0, 187);
+  background-color: rgb(103, 103, 87);
   scale: 1.01;
-  box-shadow: 0 4px 15px rgba(0,0,0,1);
+  box-shadow: 0 4px 15px rgb(0, 0, 0);
   
 }
 
 .article_piece p {
     text-align: center;
-    background-color: rgb(246, 255, 0);
+    background-color: rgb(255, 255, 0);
 }
 
 .article_piece h2 {
     text-align: center;
-    background-color: rgb(246, 255, 0);
+    background-color: rgb(225, 225, 154);
 }
 
 header {
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(233, 233, 115);
 
 }
 
 header h1 {
-    color:beige;
-    text-align: center;
-    font-size: 32px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.article_piece_side {
-    background-color:beige;
+    color:rgb(0, 0, 0);
     text-align: center;
     font-size: 32px;
     font-family: 'Times New Roman', Times, serif;
