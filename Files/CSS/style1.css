@@ -29,7 +29,7 @@ header {
 }
 
 header h1 {
-  fond-family: var(--heading-font);
+  font-family: var(--heading-font);
   text-align: center;
   font-size: 2.25rem;
   letter-spacing: 1px;

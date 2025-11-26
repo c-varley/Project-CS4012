@@ -1,0 +1,46 @@
+.article_grid {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 10px;
+    column-gap: 100px;
+    padding: 20px;
+    /* max-width: 1400px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*  */
+/* https://css.glass/ <-- good idea for later*/ 
+/* https://www.w3schools.com/html/html_examples.asp */
+
+.article_piece {
+    background: #ffffffb4;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    scale: 1;
+    transition: all 0.6s ease;
+}
+
+
+.article_piece:hover {
+  display: block;
+  background-color: rgb(255, 0, 187);
+  scale: 1.1;
+  box-shadow: 0 4px 15px rgba(0,0,0,1);
+  
+}
+
+
+.article_piece p {
+    text-align: center;
+    background-color: rgb(246, 255, 0);
+}
+
+.article_piece h2 {
+    text-align: center;
+    background-color: rgb(246, 255, 0);
+}
