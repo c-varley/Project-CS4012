@@ -1,0 +1,319 @@
+/* classic.css - keeping similar colors to style1 but tweaked a bit */
+
+:root {
+  --bg: #faf7ee;
+  --bg-alt: #fffdf7;
+  --accent: #c49b00;
+  --accent-soft: #e7cf7a;
+  --dark: #333;
+  --light: #ffffff;
+  --muted: #666;
+  --border: #e2e2e2;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--dark);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* header stuff */
+header {
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0 10px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.1rem;
+    letter-spacing: 0.05em;
+}
+
+#top-nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#top-nav a {
+    margin: 0 12px;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+#top-nav a:hover {
+    color: var(--accent);
+    border-color: var(--accent-soft);
+}
+
+.active {
+    border-bottom-color: var(--accent);
+}
+
+/* hero section */
+.hero {
+  height: 230px;
+  background: url("../Images/hero-museum.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h2 {
+  background: rgba(255, 255, 255, 0.82);
+  padding: 14px 26px;
+  border-radius: 4px;
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  color: var(--dark);
+}
+
+/* main content wrapper */
+.exhibit-page {
+    max-width: 900px;
+    margin: 36px auto 60px;
+    padding: 0 18px 10px;
+    background: var(--light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f0ead6;
+}
+
+.exhibit-page main {
+    padding: 26px 24px 32px;
+}
+
+/* typography */
+h1, h2, h3, h4 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 0 0 10px;
+    border-bottom: 3px solid var(--accent-soft);
+    padding-bottom: 4px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 24px 0 8px;
+}
+
+p {
+    margin: 0 0 14px;
+    color: var(--dark);
+}
+
+.meta-line {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 14px;
+}
+
+/* images and artwork */
+#artworks img,
+.piece img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    margin: 10px 0 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.piece {
+    margin-bottom: 38px;
+}
+
+.piece-title {
+    font-weight: bold;
+}
+
+.piece-caption {
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+/* lists */
+ul {
+    padding-left: 22px;
+    margin: 8px 0 22px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    border-left: 2px solid var(--accent-soft);
+    margin-left: 4px;
+}
+
+.timeline li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 14px;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+/* special text blocks */
+.curator-note {
+    border-left: 4px solid var(--accent);
+    padding: 12px 16px;
+    margin: 30px 0 40px;
+    background: #fffdf6;
+    font-size: 0.96rem;
+}
+
+.quote {
+    margin: 24px 0;
+    padding-left: 16px;
+    border-left: 3px solid var(--accent-soft);
+    font-style: italic;
+    color: var(--muted);
+}
+
+/* grid layout - might use this later */
+.split-layout {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    gap: 26px;
+    margin: 28px 0 20px;
+}
+
+.split-layout img {
+    margin-top: 4px;
+}
+
+/* form styling */
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 520px;
+}
+
+#feedback-form label {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    border: 1px solid var(--border);
+    padding: 9px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+#feedback-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#feedback-form button {
+    background: var(--accent);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+    letter-spacing: 0.04em;
+}
+
+#feedback-form button:hover {
+    background: #b18700;
+}
+
+/* button link style */
+.btn-link {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: 1px solid var(--accent-soft);
+    color: var(--dark);
+    background: #fffdf6;
+    font-size: 0.92rem;
+}
+
+.btn-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    margin-top: 40px;
+    padding: 18px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.88rem;
+    background: var(--bg-alt);
+}
+
+/* experimental - might add sidebar later */
+.sidebar-temp {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px dashed #e0d7b8;
+}
+
+.sidebar-temp h4 {
+    margin-top: 0;
+}
+
+/* responsive stuff */
+@media (max-width: 720px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero {
+        height: 190px;
+    }
+
+    .hero h2 {
+        font-size: 1.45rem;
+    }
+
+    .exhibit-page main {
+        padding: 20px 16px 26px;
+    }
+
+    .split-layout {
+        grid-template-columns: 1fr;
+    }
+}
