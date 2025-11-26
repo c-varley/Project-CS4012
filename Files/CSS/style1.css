@@ -31,7 +31,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff7d1; /* soft gold pastel */
+  background: #fff7d1; 
   border-bottom: 1px solid #e0c878;
 
 }
@@ -110,7 +110,7 @@ a {
   color: #fff;
 }
 
-/* ----- Button Row ----- */
+/* ----- Button Row -----*/
 .cta-row {
   margin-top: 18px;
   display: flex;
@@ -198,6 +198,11 @@ footer {
 }
 
 /* ----- Headings ----- */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+
 h2 {
   border-bottom: 3px solid var(--accent);
   padding-bottom: 6px;
