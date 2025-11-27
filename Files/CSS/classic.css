@@ -317,3 +317,23 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.timeline {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.timeline th {
+  background: var(--accent);
+  color: white;
+  padding: 10px;
+  font-family: var(--heading-font);
+}
+
+.timeline td {
+  border-bottom: 1px solid var(--border);
+  padding: 10px 15px;
+}
+
+
