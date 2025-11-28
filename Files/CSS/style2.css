@@ -4,6 +4,7 @@
   --dark: #333;
   --light: #fff;
   --muted: #666;
+  
 
   --heading-font: "Georgia", serif;
   --body-font: "Helvetica Neue", Arial, sans-serif;
@@ -54,7 +55,7 @@ a {
 body {
     margin: 0;
     padding: 0;
-    background: var(--bg);
+    background: var(--light);
     font-family: var(--body-font);
     color: var(--dark);
     line-height: 1.6;
@@ -97,7 +98,7 @@ main {
 /* https://www.w3schools.com/html/html_examples.asp */
 
 .article_piece {
-    background: var(--bg);
+    background: var(--light);
     border-radius: 0px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -110,27 +111,24 @@ main {
 
 .article_piece:hover {
   display: block;
-  background: var(--bg);
+  background: var(--light);
   scale: 1.01;
   box-shadow: 0 4px 15px rgb(0, 0, 0);
-  
 }
 
 .article_piece p {
     text-align: center;
-    background: var(--bg);
+    background: var(--light);
     font-family: var(--body-font);
     font-size: 22px;
 }
 
 .article_piece h2 {
     text-align: center;
-    
-    
 }
 
 header {
-  background: var(--bg);
+  background: var(--light);
 
 }
 
@@ -221,4 +219,37 @@ header h1 {
 .cap_p_body_2 {
   font-size: 28px;
   margin: 2%;
+}
+
+.article_piece_2 {
+    background: var(--light);
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    scale: 1;
+    border-color: var(--dark);
+    border-width: 3px;
+    border-style: solid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+.article_piece_2:hover {
+  display: block;
+  background: var(--light);
+  scale: 1.01;
+  box-shadow: 0 4px 15px rgb(0, 0, 0);
+}
+
+.article_piece_2 p {
+    text-align: center;
+    background: var(--light);
+    font-family: var(--body-font);
+    font-size: 22px;
+}
+
+.article_piece_2 h2 {
+    text-align: center;
 }
