@@ -83,10 +83,10 @@ main {
 }
 
 .article_grid img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 600px;
+    max-height: 600px; 
     margin: 10px;
-    border-color: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(133, 133, 133, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    border-color: rgb(117, 30, 30);
     border-width: 8px;
     border-style: solid;
 
@@ -173,4 +173,52 @@ header h1 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.029);
 
   border: 3px solid var(--accent);
+}
+
+.second_title_2 {
+  text-align: center;
+  background-color: var(--light);
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 60%;
+  height: auto;
+  font-family: var(--heading-font);
+  font-size: 48px;
+  word-wrap: break-word;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.029);
+
+  border: 3px solid var(--accent);
+}
+
+.caption_box {
+    background: #fffdf6;                 
+    border-left: 4px solid var(--accent); 
+    padding: 14px 18px;
+    margin: 40px 0 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 6px;                   
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.hr_1 {
+  width:80%;
+}
+
+.cap_p_head {
+  text-align: center;
+  font-size: 32px;
+}
+
+.cap_p_body {
+  font-size: 28px;
+  margin-left: 10%;
+}
+
+.cap_p_body_2 {
+  font-size: 28px;
+  margin: 2%;
 }
