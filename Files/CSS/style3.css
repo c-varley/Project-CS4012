@@ -1,0 +1,134 @@
+
+
+:root {
+    --bg: #faf7ee;
+    --card: #fffdf7;
+    --border: #e2d7c2;
+    --accent: #c49b00;
+    --accent-soft: #e7cf7a;
+    --text: #2f2a24;
+    --muted: #6b5c4a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 24px 14px 60px;
+}
+
+img, video, audio, iframe {
+    max-width: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 18px 0 12px;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: var(--muted);
+}
+
+/* Section cards */
+section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 22px 26px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: var(--accent);
+    border-bottom: 3px solid var(--accent-soft);
+    padding-bottom: 4px;
+}
+
+section h3 {
+    font-family: Georgia, serif;
+    margin: 18px 0 8px;
+    color: #4a3b25;
+}
+
+section p {
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+section ul {
+    padding-left: 22px;
+    margin: 10px 0 20px;
+}
+
+section li {
+    margin-bottom: 6px;
+}
+
+/* Media */
+section img,
+section video,
+section iframe {
+    display: block;
+    margin: 16px auto;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+audio {
+    width: 100%;
+    margin: 14px 0;
+}
+
+/* Video embed wrapper (optional) */
+section iframe {
+    width: 100%;
+    min-height: 320px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+    body {
+        padding: 18px 10px 50px;
+    }
+
+    section {
+        padding: 20px 18px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+}
