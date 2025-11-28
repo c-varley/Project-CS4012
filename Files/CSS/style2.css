@@ -61,13 +61,13 @@ body {
 }
 
 main {
-  background: #fff7d1; /* soft gold pastel */
+  background: #fff7d1; 
   border-bottom: 1px solid #e0c878;
   padding-top: 1px;
 }
 
 .article_grid {
-    background: #fff7d1; /* soft gold pastel */
+    background: #fff7d1; 
     border-bottom: 1px solid #e0c878;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(max-width, 1fr));
