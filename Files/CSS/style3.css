@@ -102,7 +102,6 @@ audio {
     margin: 14px 0;
 }
 
-/* Video embed wrapper (optional) */
 section iframe {
     width: 100%;
     min-height: 320px;
