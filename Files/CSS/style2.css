@@ -4,7 +4,7 @@
   --dark: #333;
   --light: #fff;
   --muted: #666;
-  
+
 
   --heading-font: "Georgia", serif;
   --body-font: "Helvetica Neue", Arial, sans-serif;
@@ -30,7 +30,7 @@ a {
 
 .hero {
   background: url("../Images/hero-museum.jpg") center/cover no-repeat;
-  padding: 120px 20px;
+  padding: 20px 20px;
   text-align: center;
   color: var(--dark);
 }
@@ -143,7 +143,7 @@ header h1 {
 .title {
   text-align: center;
   background-color: var(--light);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -252,4 +252,18 @@ header h1 {
 
 .article_piece_2 h2 {
     text-align: center;
+}
+
+.iframe-container {
+    width: 100%;
+    text-align: center;
+}
+.iframe-container iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+
+  background-color: var(--light);
 }
