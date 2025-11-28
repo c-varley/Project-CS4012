@@ -5,6 +5,7 @@
   --light: #fff;
   --muted: #666;
 
+
   --heading-font: "Georgia", serif;
   --body-font: "Helvetica Neue", Arial, sans-serif;
 }
@@ -29,7 +30,7 @@ a {
 
 .hero {
   background: url("../Images/hero-museum.jpg") center/cover no-repeat;
-  padding: 120px 20px;
+  padding: 20px 20px;
   text-align: center;
   color: var(--dark);
 }
@@ -54,7 +55,7 @@ a {
 body {
     margin: 0;
     padding: 0;
-    background: var(--bg);
+    background: var(--light);
     font-family: var(--body-font);
     color: var(--dark);
     line-height: 1.6;
@@ -83,10 +84,10 @@ main {
 }
 
 .article_grid img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 600px;
+    max-height: 600px; 
     margin: 10px;
-    border-color: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(133, 133, 133, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    border-color: rgb(117, 30, 30);
     border-width: 8px;
     border-style: solid;
 
@@ -97,7 +98,7 @@ main {
 /* https://www.w3schools.com/html/html_examples.asp */
 
 .article_piece {
-    background: var(--bg);
+    background: var(--light);
     border-radius: 0px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -110,27 +111,24 @@ main {
 
 .article_piece:hover {
   display: block;
-  background: var(--bg);
+  background: var(--light);
   scale: 1.01;
   box-shadow: 0 4px 15px rgb(0, 0, 0);
-  
 }
 
 .article_piece p {
     text-align: center;
-    background: var(--bg);
+    background: var(--light);
     font-family: var(--body-font);
     font-size: 22px;
 }
 
 .article_piece h2 {
     text-align: center;
-    
-    
 }
 
 header {
-  background: var(--bg);
+  background: var(--light);
 
 }
 
@@ -145,7 +143,7 @@ header h1 {
 .title {
   text-align: center;
   background-color: var(--light);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -173,4 +171,99 @@ header h1 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.029);
 
   border: 3px solid var(--accent);
+}
+
+.second_title_2 {
+  text-align: center;
+  background-color: var(--light);
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 60%;
+  height: auto;
+  font-family: var(--heading-font);
+  font-size: 48px;
+  word-wrap: break-word;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.029);
+
+  border: 3px solid var(--accent);
+}
+
+.caption_box {
+    background: #fffdf6;                 
+    border-left: 4px solid var(--accent); 
+    padding: 14px 18px;
+    margin: 40px 0 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 6px;                   
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.hr_1 {
+  width:80%;
+}
+
+.cap_p_head {
+  text-align: center;
+  font-size: 32px;
+}
+
+.cap_p_body {
+  font-size: 28px;
+  margin-left: 10%;
+}
+
+.cap_p_body_2 {
+  font-size: 28px;
+  margin: 2%;
+}
+
+.article_piece_2 {
+    background: var(--light);
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    scale: 1;
+    border-color: var(--dark);
+    border-width: 3px;
+    border-style: solid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+.article_piece_2:hover {
+  display: block;
+  background: var(--light);
+  scale: 1.01;
+  box-shadow: 0 4px 15px rgb(0, 0, 0);
+}
+
+.article_piece_2 p {
+    text-align: center;
+    background: var(--light);
+    font-family: var(--body-font);
+    font-size: 22px;
+}
+
+.article_piece_2 h2 {
+    text-align: center;
+}
+
+.iframe-container {
+    width: 100%;
+    text-align: center;
+}
+.iframe-container iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+
+  background-color: var(--light);
 }
