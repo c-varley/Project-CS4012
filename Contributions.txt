@@ -1,4 +1,4 @@
-Colin Varley, 25479245, 25%
-Eoin Kirkland, 25442317, 25%
-Evan O Connell, 25446002, 25%
-name4, ID4, 25%
+Colin Varley, 25479245, 33%
+Eoin Kirkland, 25442317, 33%
+Evan O Connell, 25446002, 33%
+Joseph VanDalen, 25451146, 0%
